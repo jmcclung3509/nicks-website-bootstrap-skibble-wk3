@@ -1,0 +1,127 @@
+* {
+    font-size: 16px;
+    font-family: 'Oranienbaum', serif;
+}
+body {
+    background-color: #E5E5E5;
+}
+/*--------------NAVBAR-------------------*/
+.navbar-nav {
+    font-family: 'Patua One', cursive;
+   
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+    padding-left: 20px;
+}
+.me-auto {
+    margin-right: 0 !important;
+    padding-right: 20px;
+    gap: 20px; 
+
+}
+.navbar-brand {
+    padding-left: 20px;
+}
+
+/*-------------HERO---------------*/
+.main {
+    margin: 0;
+}
+.hero {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 20%),
+    url("images/sunset\ 2.png");
+    background-size: cover;
+    color: white; 
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+   
+}
+.hero h1 {
+    font-family: 'Oranienbaum', serif;
+    font-size: 8vw;
+    color: white;
+    margin-bottom: 0;
+    
+}
+/*-------------MAIN---------------------*/
+.section-1 .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+h2 {
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+}
+.section-1 p {
+    font-size: 3vw;
+}
+.welcome-content {
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+.our-story {
+    color: white;
+    background-color: #3B3131;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.our-story a{
+    font-family: "Oswald", sans-serif;
+    font-size: 2vw;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.section-2 {
+    margin-top: 40px;
+}
+.section-2 .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food-div img{
+    width: -webkit-fill-available;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.section-3 row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-3 .hours {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*-------------MEDIA QUERIES--------------*/
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+    .no-show {
+        display: none;
+    }
+    .hero {
+       height: 50vh;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .no-show {
+        display: block;
+    }
+}
