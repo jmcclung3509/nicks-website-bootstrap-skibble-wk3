@@ -1,3 +1,4 @@
+
 * {
     font-size: 16px;
     font-family: 'Oranienbaum', serif;
@@ -6,9 +7,18 @@ body {
     background-color: #E5E5E5;
 }
 /*--------------NAVBAR-------------------*/
+.no-show {
+    display: none;
+}
 .navbar-nav {
     font-family: 'Patua One', cursive;
    
+}
+.navbar{
+    padding: 0;
+}
+.nav-container {
+    padding: 10px;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -35,18 +45,24 @@ body {
     background-size: cover;
     color: white; 
     position: relative;
-    height: 80vh;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items:center; 
+    height: 50vh;
+    flex-flow: row wrap;
+    
    
+}
+.hero-container {
+    padding: 0;
 }
 .hero h1 {
     font-family: 'Oranienbaum', serif;
-    font-size: 8vw;
+    font-size: 10rem;
     color: white;
     margin-bottom: 0;
-    
+    font-size: 4rem;
+    width: 60%;
 }
 /*-------------MAIN---------------------*/
 .section-1 .row{
@@ -58,7 +74,7 @@ body {
 h2 {
     font-size: 5vw;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 20px;
 
 }
@@ -119,23 +135,231 @@ h2 {
 .bottom-img{
     padding: 0;
 }
+.table *{
+    border: none !important;
+    border-collapse: none;
+    font-family: "Oswald", sans-serif;
+  
+}
+
+.title {
+    width: 60%;
+    text-align: center; 
+    /* font-size: 2rem; */
+    font-size: 3vh;
+    border-bottom: 1px solid black;
+}
+.section-3 {
+    /* background-color: white; */
+    width: 80%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    margin-left:auto;
+    margin-right: auto;
+}
+.section-3 h2{
+    width: 80%;
+    margin: 50px 0;
+    font-family: "Oswald", sans-serif;
+    font-size: 5vh;
+}
+
+.table {
+    width: 100%;
+    height: 30vh;
+    padding: 10px 0;
+    padding: 10px 0;
+    background-color: white;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+.table-responsive {
+    width: 80%;
+   
+}
+
+
+th {
+    border: none;
+} 
+td{
+    /* font-size: 1.2rem; */
+    font-size: 2vh;
+}
+.closed {
+    color: rgba(83, 25, 25, 0.932);
+}
+
+/*------------CAROUSEL--------------*/
+.section-4 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.carousel-item img {
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/*--------------FOOTER-------------*/
 footer {
     background-color: white;
     padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
+footer * {
+   font-family: "Oswald", sans-serif;
+}
+footer .col  h4 {
+    margin-bottom: 10px;
+    font-size: 2vh;
+}
+/* footer .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+} */
+footer  .col  {
+   text-align: center;
+}
+footer .footer-content p {
+    font-size: 1vh;
+    margin-bottom: 8px;
+}
+.footer-content i {
+    font-size: 2vh;
+    margin-top:5px;
+}
+
+
 /*-------------MEDIA QUERIES--------------*/
 
-@media screen and (min-width: 300px) and (max-width: 767px) {
-    .no-show {
-        display: none;
-    }
-    .hero {
-       height: 50vh;
-    }
-    
-}
+
 @media screen and (min-width: 768px) {
     .no-show {
         display: block;
     }
+    .hero h1{
+        font-size: 7rem;
+        width: 40%;
+    }
+    .no-show {
+        display: block;
+    }
+    .section-3 {
+        width: 80%;
+    }
+    .table {
+        width: 100%;
+        height: 30vh;
+    }
+    .table-responsive {
+        width: 45%;
+    }
+    .section-4 {
+        width: 60%;
+
+    }
+    .carousel-item img{
+        width: 100%;
+        max-height: 450px;
+    }
+    .carousel-item .car-img {
+        width:150%;
+    }
+    /* footer h4 {
+        font-size: 1rem;
+    }
+    footer .footer-content p {
+        font-size: 0.75rem
+    } */
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .hero {
+        height: 80vh;
+      flex-flow: row nowrap;
+       
+    }
+
+    .hero h1 {
+        font-size: 7rem;
+        margin-bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+    /*-------------MAIN---------------------*/
+ 
+    h2 {
+        font-size: 5vw;
+        margin-top: 100px;
+  
+    
+    }
+    .section-1 p {
+        font-size: 3vw;
+    }
+    .welcome-content {
+        font-size: 3vw;   
+    }
+  
+
+  
+    .title {
+        width: 60%;
+        text-align: center; 
+    }
+    .section-3 {
+        width: 60%; 
+    
+    }
+    .section-3 h2{
+        width: 60%;
+       
+    }
+    .title {
+        font-size: 2.5rem;
+    
+    }
+    .table {
+        width: 100%;
+        height: 35vh;
+    }
+    
+
+    td{
+        font-size: 1.5rem;
+    }
+  
+    .closed {
+        font-size: 1.8rem;
+    }
+    .section-4 {
+        width: 50%;
+        margin-bottom: 100px;
+    }
+    .carousel-item img{
+        width: 100%;
+        max-height: 450px;
+    }
+    .carousel-item .car-img {
+        width:150%;
+    }
+   /* footer .col h4 {
+       font-size: 1.3rem;
+   }
+    footer .col p {
+        font-size: 1rem;
+    }
+    .footer-content i {
+        font-size: 1.2rem;
+} */
 }
