@@ -1,4 +1,3 @@
-
 * {
     font-size: 16px;
     font-family: 'Oranienbaum', serif;
@@ -6,7 +5,14 @@
 body {
     background-color: #E5E5E5;
 }
+h2 {
+    font-family: "Oswald", sans-serif;
+    
+}
 /*--------------NAVBAR-------------------*/
+header {
+    background-color: rgb(47, 79, 79);
+}
 .no-show {
     display: none;
 }
@@ -40,8 +46,9 @@ body {
     margin: 0;
 }
 .hero {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 20%),
-    url("images/sunset\ 2.png");
+    background-image: 
+    /* linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 20%), */
+    url("images/sunset.png");
     background-size: cover;
     color: white; 
     position: relative;
@@ -58,10 +65,9 @@ body {
 }
 .hero h1 {
     font-family: 'Oranienbaum', serif;
-    font-size: 10rem;
+    font-size: 4rem;
     color: white;
     margin-bottom: 0;
-    font-size: 4rem;
     width: 60%;
 }
 /*-------------MAIN---------------------*/
@@ -72,14 +78,14 @@ body {
    
 }
 h2 {
-    font-size: 5vw;
+    font-size: 2rem;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
 
 }
 .section-1 p {
-    font-size: 3vw;
+    font-size: 1rem;
 }
 .welcome-content {
     text-align: center;
@@ -88,7 +94,7 @@ h2 {
 }
 .our-story {
     color: white;
-    background-color: #3B3131;
+    background-color: #493838;
     padding: 10px 20px;
     display: flex;
     justify-content: center;
@@ -97,7 +103,7 @@ h2 {
 }
 .our-story a{
     font-family: "Oswald", sans-serif;
-    font-size: 2vw;
+    font-size: 1rem;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -142,13 +148,7 @@ h2 {
   
 }
 
-.title {
-    width: 60%;
-    text-align: center; 
-    /* font-size: 2rem; */
-    font-size: 3vh;
-    border-bottom: 1px solid black;
-}
+
 .section-3 {
     /* background-color: white; */
     width: 80%; 
@@ -158,6 +158,7 @@ h2 {
     flex-flow: row wrap;
     margin-left:auto;
     margin-right: auto;
+    gap: 20px;
 }
 .section-3 h2{
     width: 80%;
@@ -165,15 +166,38 @@ h2 {
     font-family: "Oswald", sans-serif;
     font-size: 5vh;
 }
-
-.table {
+.hours-container {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    background: white;
+    gap: 20px;
+    height: 35vh;
+}
+.hours-container h3 {
     width: 100%;
-    height: 30vh;
+    font-size: 2rem;
+}
+.hours {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.hours p {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* .table {
+    width: 100%;
+    height: 35vh;
     padding: 10px 0;
     padding: 10px 0;
     background-color: white;
     padding: 20px 0;
     margin-bottom: 50px;
+    box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));;
 }
 .table-responsive {
     width: 80%;
@@ -186,10 +210,33 @@ th {
 } 
 td{
     /* font-size: 1.2rem; */
-    font-size: 2vh;
-}
+    font-size: 1.2rem;
+} */
 .closed {
-    color: rgba(83, 25, 25, 0.932);
+    color: #c80d0dee;
+}
+.title {
+    width: 60%;
+    text-align: center; 
+  
+    font-size: 1.8rem;
+    border-bottom: 1px solid black;
+  
+}
+
+.music-schedule {
+
+    color: white;
+    background-color: #493838;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px 0;
+
+    
+
 }
 
 /*------------CAROUSEL--------------*/
@@ -209,33 +256,84 @@ td{
 /*--------------FOOTER-------------*/
 footer {
     background-color: white;
-    padding-top: 10px;
+    padding: 20px 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+    
 
 }
 footer * {
    font-family: "Oswald", sans-serif;
+   color: rgb(48, 46, 46);
 }
 footer .col  h4 {
     margin-bottom: 10px;
     font-size: 2vh;
 }
-/* footer .row {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-} */
+
+.footer-content {
+    padding-left: 0;
+}
 footer  .col  {
    text-align: center;
 }
 footer .footer-content p {
-    font-size: 1vh;
-    margin-bottom: 8px;
+    font-size: .68rem;
+    margin-bottom: 0;
+  
+}
+.footer-content:first-child{
+    padding-left:12px;
+    padding-right: 0;
 }
 .footer-content i {
-    font-size: 2vh;
+    font-size: 1.5rem;
     margin-top:5px;
+}
+
+.footer-content label{
+    font-size: 0.7rem;
+}
+.footer-content a {
+    font-size: 0.7rem;
+}
+.footer-directions {
+    padding-left: 0;
+}
+/*-------------MENU PAGE-------------------*/
+
+.buffer {
+    height: 100px;
+}
+.menu-cont h3 {
+    font-size: rem;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+
+/*-------------MUSIC PAGE-------------*/
+.music-title {
+    margin: 20px 0 50px 0;
+    font-family: "Oswald", sans-serif;
+}
+
+/*------------HISTORY PAGE----------------*/
+#history p {
+    text-indent: 30px;
+}
+.names {
+    margin-left: 30px;
+    width: 80%;
+    text-align: center;
+}
+/*---------------SeaBreeze Motel-----------------*/
+.section-sb-3 {
+    margin-bottom: 50px;
+}
+.section-sb-3 img {
+    padding: 20px 0;
 }
 
 
@@ -243,6 +341,12 @@ footer .footer-content p {
 
 
 @media screen and (min-width: 768px) {
+    p {
+        font-size: 1.2rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
     .no-show {
         display: block;
     }
@@ -254,15 +358,19 @@ footer .footer-content p {
         display: block;
     }
     .section-3 {
-        width: 80%;
+        width: 100%;
     }
-    .table {
+    .hours-container {
+        width: 48%;
+        
+    }
+    /* .table {
         width: 100%;
         height: 30vh;
     }
     .table-responsive {
         width: 45%;
-    }
+    } */
     .section-4 {
         width: 60%;
 
@@ -274,15 +382,43 @@ footer .footer-content p {
     .carousel-item .car-img {
         width:150%;
     }
-    /* footer h4 {
-        font-size: 1rem;
+    /*----------FOOTER---------------*/
+       footer  .footer-content p{
+            font-size: 1rem;
+        }
+        .footer-content a {
+            font-size: 1rem;
+        }
+        .footer-content label{
+            font-size: 1rem;
+        }
+        .footer-content i{
+            font-size: 2rem;
+        }
+        .footer-row {
+            justify-content: space-around;
+        }
+    /*---------SEABREEZE-------------*/
+    .sb-content {
+        justify-content: center;
     }
-    footer .footer-content p {
-        font-size: 0.75rem
-    } */
+  
 }
 
 @media screen and (min-width: 1200px) {
+    /*------------NAV-------------------*/
+    p{
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 5rem;;
+        margin-top: 100px;
+  
+    
+    }
+    nav a {
+        font-size: 1rem;
+    }
     
     .hero {
         height: 80vh;
@@ -296,19 +432,15 @@ footer .footer-content p {
         width: 100%;
         text-align: center;
     }
+   
     /*-------------MAIN---------------------*/
  
-    h2 {
-        font-size: 5vw;
-        margin-top: 100px;
   
-    
-    }
     .section-1 p {
-        font-size: 3vw;
+        font-size: 1.5rem;;
     }
     .welcome-content {
-        font-size: 3vw;   
+        font-size: 1.5rem;vw;   
     }
   
 
@@ -331,7 +463,7 @@ footer .footer-content p {
     }
     .table {
         width: 100%;
-        height: 35vh;
+        height: 40vh;
     }
     
 
@@ -353,13 +485,10 @@ footer .footer-content p {
     .carousel-item .car-img {
         width:150%;
     }
-   /* footer .col h4 {
-       font-size: 1.3rem;
-   }
-    footer .col p {
-        font-size: 1rem;
+    .music-schedule {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .footer-content i {
-        font-size: 1.2rem;
-} */
+
 }
