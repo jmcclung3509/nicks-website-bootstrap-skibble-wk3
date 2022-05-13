@@ -1,6 +1,7 @@
 * {
     font-size: 16px;
-    font-family: 'Oranienbaum', serif;
+    font-family: 'Playfair Display', serif;
+    color: rgb(39, 38, 38);
 }
 body {
     background-color: #E5E5E5;
@@ -20,6 +21,7 @@ h2 {
 }
 .navbar{
     padding: 0;
+    height: 70px;
 }
 .nav-container {
     padding: 10px;
@@ -37,6 +39,10 @@ h2 {
 }
 .navbar-brand {
     padding-left: 20px;
+}
+.navbar-brand img {
+    height: 50%;
+    width: 50%;
 }
 .nav-link:hover{
     background-color: #E5E5E5;
@@ -178,7 +184,7 @@ h2 {
     flex-flow: row wrap;
     background: white;
     gap: 20px;
-    height: 350px;
+    height: 400px;
     border-radius: 5px;
 }
 .hours-container h3 {
@@ -208,6 +214,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     font-size: 1rem;
+
 }
 .hours span {
     font-size: 1rem;
@@ -216,40 +223,43 @@ h2 {
 .closed {
     color: #c80d0dee;
 }
-.title {
+/* .title {
     width: 60%;
     text-align: center; 
     font-size: 1.8rem;
     border-bottom: 1px solid black;
     max-height: 50px
   
-}
+} */
 .restaurant-h3{
     padding-top: 0;
   }
 
-.music-schedule {
+.hours a {
 
-    color: #493838;;
-    /* padding: 5px 10px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 5px;
     margin: 10px 0;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2rem;
-    
+    text-decoration: none;
+    font-weight: bold;
+    text-align:center;
+    width: 80%;
 
 }
-.music-schedule:hover{
-    background-color:   #855959;
-}
-/* .left {
-    align-content: space-around;
-} */
 
+.hours a:hover{
+    background-color:   #e5e5e5;
+    transform:scale(1.2);
+    transition: all ease-in-out 0.5s;
+}
+.music-schedule {
+    padding: 15px;
+}
+.left {
+    padding-top:10px;
+}
 /*------------CAROUSEL--------------*/
 .section-4 {
     margin-right: auto;
@@ -326,6 +336,10 @@ footer .footer-content p {
     text-align: center;
     font-family: "Oswald", sans-serif;
 }
+#happy-hour P{
+    text-align: center;
+    margin-bottom: 8px;
+}
 
 /*-------------MUSIC PAGE-------------*/
 .music-title {
@@ -341,6 +355,9 @@ footer .footer-content p {
     margin-left: 30px;
     width: 80%;
     text-align: center;
+}
+#history figure {
+    margin: 40px 0;
 }
 /*---------------SeaBreeze Motel-----------------*/
 .section-sb-3 {
@@ -364,6 +381,13 @@ footer .footer-content p {
     .no-show {
         display: block;
     }
+    .navbar {
+        height: 100px;
+    }
+    .navbar-brand img {
+        width: 100%;
+        height: 100%;
+    }
     .hero h1{
         font-size: 6.5rem;
         width: 90%;
@@ -373,15 +397,17 @@ footer .footer-content p {
         display: block;
     }
     .section-3 {
-        width: 80%;
+        width: 94%;
     }
     .hours-container {
         width: 48%;
-        height: 500px;
+        height: 525px;
+        margin-bottom: 100px;
     }
 
     .hours-container p  {
         font-size: 1.5rem;
+      
     }
 
      .hours-container span {
@@ -393,7 +419,7 @@ footer .footer-content p {
         margin-top: 30px;
     }
 
-    .music-schedule {
+    .hours a {
         font-size: 1.5rem;
     }
     .closed {
@@ -467,6 +493,9 @@ footer .footer-content p {
         margin-bottom: 0;
        
 
+    }
+    .hours-container {
+        height: 550px;
     }
    
     /*-------------MAIN---------------------*/
