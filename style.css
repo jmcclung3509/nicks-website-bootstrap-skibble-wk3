@@ -10,9 +10,7 @@ h2 {
     
 }
 /*--------------NAVBAR-------------------*/
-header {
-    background-color: rgb(47, 79, 79);
-}
+
 .no-show {
     display: none;
 }
@@ -40,6 +38,12 @@ header {
 .navbar-brand {
     padding-left: 20px;
 }
+.nav-link:hover{
+    background-color: #E5E5E5;
+}
+.dropdown-item:hover{
+    background-color:#E5E5E5;
+}
 
 /*-------------HERO---------------*/
 .main {
@@ -47,7 +51,7 @@ header {
 }
 .hero {
     background-image: 
-    /* linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 20%), */
+     /* linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 20%), */
     url("images/sunset.png");
     background-size: cover;
     color: white; 
@@ -57,6 +61,7 @@ header {
     align-items:center; 
     height: 50vh;
     flex-flow: row wrap;
+   
     
    
 }
@@ -65,10 +70,15 @@ header {
 }
 .hero h1 {
     font-family: 'Oranienbaum', serif;
-    font-size: 4rem;
+    font-size: 5rem;
     color: white;
     margin-bottom: 0;
-    width: 60%;
+    width: 80%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -100px;
+    font-weight: bold;
 }
 /*-------------MAIN---------------------*/
 .section-1 .row{
@@ -78,7 +88,7 @@ header {
    
 }
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -108,6 +118,9 @@ h2 {
     text-align: center;
     text-decoration: none;
 }
+.our-story:hover{
+    background-color:   #855959;
+}
 .section-2 {
     margin-top: 40px;
 }
@@ -124,15 +137,12 @@ h2 {
 .section-3 {
     margin-bottom: 50px; 
 }
-.section-3 row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .section-3 .hours {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 .bottom-img img {
     width: -webkit-fill-available;
@@ -141,12 +151,7 @@ h2 {
 .bottom-img{
     padding: 0;
 }
-.table *{
-    border: none !important;
-    border-collapse: none;
-    font-family: "Oswald", sans-serif;
-  
-}
+
 
 
 .section-3 {
@@ -173,71 +178,77 @@ h2 {
     flex-flow: row wrap;
     background: white;
     gap: 20px;
-    height: 35vh;
+    height: 350px;
+    border-radius: 5px;
 }
 .hours-container h3 {
-    width: 100%;
-    font-size: 2rem;
+    width: 70%;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color:#493838;
+    color: white;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px auto;
+    padding: 10px;
+    vertical-align: center;
+    max-height: 50px;
+
 }
+
 .hours {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
+    margin: 0 15px;
 }
 .hours p {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    font-size: 1rem;
 }
-/* .table {
-    width: 100%;
-    height: 35vh;
-    padding: 10px 0;
-    padding: 10px 0;
-    background-color: white;
-    padding: 20px 0;
-    margin-bottom: 50px;
-    box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));;
-}
-.table-responsive {
-    width: 80%;
-   
+.hours span {
+    font-size: 1rem;
 }
 
-
-th {
-    border: none;
-} 
-td{
-    /* font-size: 1.2rem; */
-    font-size: 1.2rem;
-} */
 .closed {
     color: #c80d0dee;
 }
 .title {
     width: 60%;
     text-align: center; 
-  
     font-size: 1.8rem;
     border-bottom: 1px solid black;
+    max-height: 50px
   
 }
+.restaurant-h3{
+    padding-top: 0;
+  }
 
 .music-schedule {
 
-    color: white;
-    background-color: #493838;
-    padding: 10px 5px;
+    color: #493838;;
+    /* padding: 5px 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     margin: 10px 0;
-
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
     
 
 }
+.music-schedule:hover{
+    background-color:   #855959;
+}
+/* .left {
+    align-content: space-around;
+} */
 
 /*------------CAROUSEL--------------*/
 .section-4 {
@@ -281,6 +292,7 @@ footer  .col  {
 footer .footer-content p {
     font-size: .68rem;
     margin-bottom: 0;
+    width: 100%;
   
 }
 .footer-content:first-child{
@@ -294,9 +306,11 @@ footer .footer-content p {
 
 .footer-content label{
     font-size: 0.7rem;
+    width: 100%;
 }
 .footer-content a {
     font-size: 0.7rem;
+    width: 100%;
 }
 .footer-directions {
     padding-left: 0;
@@ -351,26 +365,41 @@ footer .footer-content p {
         display: block;
     }
     .hero h1{
-        font-size: 7rem;
-        width: 40%;
+        font-size: 6.5rem;
+        width: 90%;
+        margin-top: -150px;
     }
     .no-show {
         display: block;
     }
     .section-3 {
-        width: 100%;
+        width: 80%;
     }
     .hours-container {
         width: 48%;
-        
+        height: 500px;
     }
-    /* .table {
-        width: 100%;
-        height: 30vh;
+
+    .hours-container p  {
+        font-size: 1.5rem;
     }
-    .table-responsive {
-        width: 45%;
-    } */
+
+     .hours-container span {
+        font-size: 1.5rem;
+    }
+    .hours-container h3 {
+        font-size: 1.8rem;
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .music-schedule {
+        font-size: 1.5rem;
+    }
+    .closed {
+        font-size: 1.5rem;
+    }
+
     .section-4 {
         width: 60%;
 
@@ -383,21 +412,21 @@ footer .footer-content p {
         width:150%;
     }
     /*----------FOOTER---------------*/
-       footer  .footer-content p{
-            font-size: 1rem;
-        }
-        .footer-content a {
-            font-size: 1rem;
-        }
-        .footer-content label{
-            font-size: 1rem;
-        }
-        .footer-content i{
-            font-size: 2rem;
-        }
-        .footer-row {
-            justify-content: space-around;
-        }
+    footer  .footer-content p{
+        font-size: 1rem;
+    }
+    .footer-content a {
+        font-size: 1rem;
+    }
+    .footer-content label{
+        font-size: 1rem;
+    }
+    .footer-content i{
+        font-size: 2rem;
+    }
+    .footer-row {
+        justify-content: space-around;
+    }
     /*---------SEABREEZE-------------*/
     .sb-content {
         justify-content: center;
@@ -407,6 +436,13 @@ footer .footer-content p {
 
 @media screen and (min-width: 1200px) {
     /*------------NAV-------------------*/
+    nav .nav-link  {
+        font-size: 1.2rem;
+
+    }
+    nav .dropdown-item {
+        font-size: 1.2rem;
+    }
     p{
         font-size: 1.5rem;
     }
@@ -422,15 +458,15 @@ footer .footer-content p {
     
     .hero {
         height: 80vh;
-      flex-flow: row nowrap;
+         flex-flow: row nowrap;
        
     }
 
     .hero h1 {
-        font-size: 7rem;
+        font-size: 8rem;
         margin-bottom: 0;
-        width: 100%;
-        text-align: center;
+       
+
     }
    
     /*-------------MAIN---------------------*/
@@ -440,10 +476,9 @@ footer .footer-content p {
         font-size: 1.5rem;;
     }
     .welcome-content {
-        font-size: 1.5rem;vw;   
+        font-size: 1.5rem;   
     }
   
-
   
     .title {
         width: 60%;
@@ -451,31 +486,20 @@ footer .footer-content p {
     }
     .section-3 {
         width: 60%; 
+        margin-bottom: 100px;
     
     }
     .section-3 h2{
         width: 60%;
        
     }
-    .title {
-        font-size: 2.5rem;
-    
-    }
-    .table {
-        width: 100%;
-        height: 40vh;
-    }
-    
 
-    td{
-        font-size: 1.5rem;
-    }
-  
+
     .closed {
         font-size: 1.8rem;
     }
     .section-4 {
-        width: 50%;
+        width: 40%;
         margin-bottom: 100px;
     }
     .carousel-item img{
@@ -486,9 +510,46 @@ footer .footer-content p {
         width:150%;
     }
     .music-schedule {
-        width: 50%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
+        font-size: 1.7rem;
+    }
+    /*--------- FOOTER------------*/
+    .footer-content p {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .footer-content a {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .footer-content label {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    /*------------ABOUT-------------*/
+
+    #history .content-wrapper {
+        padding: 0 50px;
+    }
+
+    /*------------MENU -------------*/
+    #menu h2 {
+        margin-bottom: 50px;
+    }
+    #menu img {
+        padding: 0 20px;
     }
 
 }
+
+@media screen and (min-width: 1600px) {
+ .hero h1{
+     font-size: 8rem;
+    
+ }
+ .hours-container h3{
+     font-size: 2rem;
+ }
+ }
